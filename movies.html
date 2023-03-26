@@ -1,0 +1,263 @@
+<html>
+
+  <head>
+    <title>24x7 Entertainment Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="icon" href="247LOGO (1).jpg" type="image/png" sizes="16x20">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="365movie.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+
+        <div class="navigation">
+
+          <a class="links" href="index.html"><img class="logo" src="247LOGO (1).jpg" alt="24x7 Entertainment Portal"/></a>
+          <a class="links text" href="#">Movies</a>
+          <a class="links text" href="#tv_series">TV Series</a>
+          <a class="links text" href="#audio">Audio</a>
+
+
+        </div>
+
+        <div class="bar"></div>
+
+      </header>
+
+      <div class="content">
+        <div class="head-content">
+
+          <div class="slideshow-container">
+            <div class="slides active" >
+              <img src="imgmovie/Harry-Potter-and-the-Chamber-of-Secrets-1.jpg" alt="hero carousel">
+            </div>
+            <div class="slides">
+              <img src="images/ds.jpg" alt="hero carousel">
+            </div>
+            <div class="slides ">
+              <img src="images/Raazi-Poster.jpg" alt="hero carousel">
+            </div>
+            
+
+            <div class="slides">
+              <img src="imgmovie/sc2.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="imgmovie/sc3.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="imgmovie/Theory-of-Everything.jpg" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="imgmovie/sc5.jpg" alt="hero carousel">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+          </div>
+
+        </div>
+
+
+        <div class="dropdown">
+          <button class="dropbtn"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="getMediaPosters(this.text)">All</a>
+            <a onclick="getMediaPosters(this.text)">Action</a>
+            <a onclick="getMediaPosters(this.text)">Drama</a>
+            <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+          </div>
+
+        </div>
+
+
+        <div class="search-container">
+          <form onsubmit="javascript:return false;">
+            <input type="text" class="input-medium search-query" placeholder="Search your favourite movie title" name="search" oninput="updateResults()">
+
+            <div class="search-container-button">
+              <button type="submit" onclick="updateResults()"><i class="fa fa-search"></i></button>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="media-carousel-container">
+
+
+          <div id="media-holder-action">
+
+            <div id="image-container-action">
+              <div class="movies-action">
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/ven.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Vengeance</b><br/>Thriller, Mystery & Comedy </div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/nano3.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Action, Adventure.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/Uri1-750x335.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">URI: The Surgical Strike</b><br/>Indian war/Action.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/Harry-Potter-and-the-Chamber-of-Secrets-1.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Harry Potter</b><br/>series based on the eponymous novels by J. K. Rowling.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/justice.jpg" alt="media carousel" width=200 height=200 />
+                <div class="overlay"><b class="movie-title"> Justice League </b><br/>Action, Adventure.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/nano1.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Haider</b><br/>Indian crime tragedy film.</div>
+                </div>
+              </div>
+              <div class="media-carousel-movies">
+                <img src="imgmovie/terminal.jpg" alt="media carousel" width=200 height=200 />
+              <div class="overlay"><b class="movie-title">  The Terminal List </b><br/>Action, Drama, Thriller.</div>
+              </div>
+              <div class="media-carousel-movies">
+                <img src="imgmovie/game.jpg" alt="media carousel" width=200 height=200 />
+                <div class="overlay"><b class="movie-title"> Game of Thrones </b><br/>Action, Adventure, Drama.</div>
+              </div>
+            </div>
+
+              <div class="movies-drama">
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/agni.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Agnipaath</b><br/>Indian crime tragedy film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/ankh.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Ankhein</b><br/>Thriller, Mystery & Comedy .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/guide.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Guide</b><br/>Musical, Drama .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/infi.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">infinite</b><br/>Fantasy/Science Fiction.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/heaven.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Heaven</b><br/>Drama.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/nano12.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Baahubali</b><br/> Action/War, drama.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/shour.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Shaurya</b><br/>Romance, Thriller.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/nano14.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Limelight</b><br/>Comedy, Drama.</div>
+                </div>
+      
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/padm.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Padmaavat</b><br/>Romance, Drama.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/kai.jpg "alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Kai Po Che</b><br/>buddy sports drama film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/rabta.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Raabta</b><br/>omantic action thriller Drama.</div>
+                </div>
+              </div>
+
+              <div class="movies-scifi">
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/inter.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Interstellar</b><br/>a 2014 epic science fiction film .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/nano20.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Star Wars</b><br/>an American epic space-opera multimedia franchise.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/thor.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Thor</b><br/> American superhero film based on the Marvel Comics character of the same name.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/captain.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Captain America</b><br/>the alter ego of Steve Rogers.</div>
+                </div>
+
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/black.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Black Widow</b><br/>Action, Sci-fi .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/iron.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Iron-Man</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/hulk.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Hulk</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+        
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/super.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Superman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/supwom.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Supergirl</b><br/>a 1984 British superhero film .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="images/ds.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Doctor Strange</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/mars.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Mars</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/gravity.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Gravity</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="imgmovie/martian.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Martian</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="copyright">
+        <a class="links" href="index.html"><img class="logo" src="247LOGO (1).jpg" alt="365 Entertainment Portal"/></a>
+        <div class="text"><b>Powered by 24x7 Entertainment Portal 2022. All Rights Reserved.</b></div>
+      </div>
+
+    </footer>
+
+
+    <script type="text/javascript" src="javascript/main.js"></script>
+  </body>
+
+</html>
