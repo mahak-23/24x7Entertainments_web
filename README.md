@@ -2,6 +2,8 @@
 
 24x7Entertainments is a web application designed to provide an entertainment platform similar to popular streaming services like Hotstar, Zee5, and Voot. The front-end of 24x7Entertainments is developed using HTML, CSS, and JavaScript.
 
+![image](https://github.com/mahak-23/24x7Entertainments_web/assets/107416996/3671a42b-ce06-4b9b-bf3e-4d9b7251dfc2)
+
 ### Features
 
 - **Search Module:** Utilizes a JavaScript search module to search for movies within the webpage. Displays search results with their respective categories.
