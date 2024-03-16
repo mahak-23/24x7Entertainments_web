@@ -1,7 +1,27 @@
-# 24x7Entertainments
-Coding Front-end of 24x7 Entertainments similar to hotstar, zee5, voot
+## 24x7Entertainments
 
-24x7 Entertainments uses a javascript search module to search for any movies within the webpage and show the result with their category. Image sliding effect shown on the home page as well as movies page is done using javascript carousel part. On movies page, the Genre button will show you the categories in the dropdown. when you click on any category it will filter out the movies and show the particular result of the category.
+24x7Entertainments is a web application designed to provide an entertainment platform similar to popular streaming services like Hotstar, Zee5, and Voot. The front-end of 24x7Entertainments is developed using HTML, CSS, and JavaScript.
 
-#live project
-https://mahak-23.github.io/24x7Entertainments_web/
+### Features
+
+- **Search Module:** Utilizes a JavaScript search module to search for movies within the webpage. Displays search results with their respective categories.
+- **Image Sliding Effect:** Implements a JavaScript carousel to create an image sliding effect on the home page and movies page.
+- **Genre Filtering:** Allows users to filter movies by genre. Clicking on the Genre button reveals categories in a dropdown menu, enabling users to select a specific category and view relevant movie results.
+
+### Live Project
+
+You can access the live project at [24x7Entertainments Web](https://mahak-23.github.io/24x7Entertainments_web/).
+
+### Technologies Used
+
+- **HTML:** Markup language for structuring the web pages.
+- **CSS:** Styling language for designing the layout and appearance of the application.
+- **JavaScript:** Programming language used for implementing dynamic functionalities and interactivity.
+- **JavaScript Carousel:** Utilized for creating image sliding effects.
+
+### Usage
+
+1. Navigate to the [live project](https://mahak-23.github.io/24x7Entertainments_web/) link provided above.
+2. Explore the homepage with the image sliding effect and search module functionality.
+3. Visit the movies page to filter movies by genre using the Genre button and dropdown menu.
+
